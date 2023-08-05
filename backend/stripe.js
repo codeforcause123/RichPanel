@@ -21,8 +21,8 @@ const createCheckoutSession = async (customer, priceID) => {
             },
         ],
         mode: 'subscription',
-        success_url: 'http://localhost:3000/success',
-        cancel_url: 'http://localhost:3000/failure',
+        success_url: 'https://richpanelfront.vercel.app/success',
+        cancel_url: 'https://richpanelfront.vercel.app/failure',
     });
     return session;
 }
