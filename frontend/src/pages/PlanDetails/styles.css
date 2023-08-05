@@ -1,0 +1,5 @@
+.body4{
+    background: #c0c0aa;
+        background: -webkit-linear-gradient(to right, #1cefff, #c0c0aa);
+        background: linear-gradient(to right, #1cefff, #c0c0aa);
+}

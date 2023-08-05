@@ -1,0 +1,9 @@
+.body2{
+    background: #00d2ff;
+        background: -webkit-linear-gradient(to left, #928DAB, #00d2ff);
+        background: linear-gradient(to left, #928DAB, #00d2ff);
+     
+        height: 100rem;
+        width: 100%;
+        position: absolute;
+}
