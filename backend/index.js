@@ -9,7 +9,7 @@ const app = express();
 // middleware
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: ["http://localhost:3000", "https://richpanel-one.vercel.app/"], // Replace with the allowed origins
   })
 );
 app.use(express.json());
