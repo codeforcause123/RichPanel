@@ -14,7 +14,6 @@ export const DataContextProvider = ({ children }) => {
     }, [])
     const getData = async () => {
         const data = await getDocs(plansCollection);
-        // console.log(data.docs)
         var x = []
         data.forEach((doc) => {
             x.push({ ...doc.data(), name: doc.id })
@@ -27,8 +26,6 @@ export const DataContextProvider = ({ children }) => {
     }
     const addCustomerData = async (data) => {
         const { name, email, stripeID, isActive, plan, subID } = data
-        // const isActive = false;
-        // const plan = "none";
         const docID = email;
         const docData = {
             name,

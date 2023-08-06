@@ -1,8 +1,6 @@
 const cors = require("cors");
 const express = require("express");
 const Stripe = require("./stripe");
-// const session = require('express-session')
-// var memeorystore = require('memorystore')(session)
 
 const app = express();
 
@@ -43,7 +41,6 @@ app.post("/login", async (req, res) => {
   const { email, name, desc } = req.body;
   const customer = await Stripe.addNewCustomer(email, desc, name);
   res.send(customer);
-  // res.redirect("http://localhost:3000/login");
 });
 
 app.post("/checkout", async (req, res) => {

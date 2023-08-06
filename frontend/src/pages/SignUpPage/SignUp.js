@@ -53,16 +53,8 @@ function SignUp() {
             const y = await changeTheDisplayName(name);
             console.log(y)
             console.log('User Created', user.displayName)
-            // const res = await axios.post('http://localhost:8282/login', {
-            //     name: user.displayName,
-            //     email: user.email,
-            //     desc: 'google'
-            // })
-            // console.log(res.data)
-            // await addCustomerData({ name: name, email: email, stripeID: res.data.id });
 
             setLoading(false)
-            // navigate('/billing')
         } catch (error) {
             setError(error.message);
             console.log(error)
