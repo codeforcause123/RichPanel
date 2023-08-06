@@ -31,12 +31,12 @@ app.use((req, res, next) => {
 const priceToProductMap = {
   basicMonthly: "price_1Nc0LfSBuYqweobIm28RwcVA",
   basicYearly: "price_1Nc08ZSBuYqweobIrBj0OJO6",
-  //   standardMonthly: "price_1LoMibFOlrjAHlmzbBxbjtN3",
-  //   standardYearly: "price_1LoMibFOlrjAHlmzGzXefTiF",
-  //   premiumMonthly: "price_1LoMjBFOlrjAHlmzSiByY7Ki",
-  //   premiumYearly: "price_1LoMjBFOlrjAHlmzCncSxsCP",
+  standardMonthly: "price_1Nc0ioSBuYqweobIT3NC58vh",
+  standardYearly: "price_1Nc0jhSBuYqweobI7pkIJrVX",
+  premiumMonthly: "price_1Nc0khSBuYqweobI80eFYdqr",
+  premiumYearly: "price_1Nc0lMSBuYqweobIZNIJP7cV",
   mobileMonthly: "price_1Nc0BkSBuYqweobIcfrvFSVz",
-  //   regularYearly: "price_1LoMjiFOlrjAHlmzfyEifscy",
+  mobileYearly: "price_1Nc0EVSBuYqweobIJB8oC6Zh",
 };
 
 app.post("/login", async (req, res) => {
