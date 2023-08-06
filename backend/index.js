@@ -7,14 +7,14 @@ const Stripe = require("./stripe");
 const app = express();
 
 // middleware
-app.use(
-  cors({
-    origin: [
-      "https://richpanelfront.vercel.app",
-      "https://richpanel-one.vercel.app/",
-    ], // Replace with the allowed origins
-  })
-);
+// app.use(
+//   cors({
+//     origin: [
+//       "https://richpanelfront.vercel.app",
+//       "https://richpanel-one.vercel.app/",
+//     ], // Replace with the allowed origins
+//   })
+// );
 app.use(express.json());
 app.use(cors());
 
