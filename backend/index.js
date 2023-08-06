@@ -16,7 +16,7 @@ app.use(
   })
 );
 app.use(express.json());
-// app.use(cors());
+app.use(cors());
 
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
@@ -35,8 +35,8 @@ const priceToProductMap = {
   standardYearly: "price_1LoMibFOlrjAHlmzGzXefTiF",
   premiumMonthly: "price_1LoMjBFOlrjAHlmzSiByY7Ki",
   premiumYearly: "price_1LoMjBFOlrjAHlmzCncSxsCP",
-  regularMonthly: "price_1LoMjiFOlrjAHlmzTF4huC3K",
-  regularYearly: "price_1LoMjiFOlrjAHlmzfyEifscy",
+  mobileMonthly: "price_1LoMjiFOlrjAHlmzTF4huC3K",
+  mobileYearly: "price_1LoMjiFOlrjAHlmzfyEifscy",
 };
 
 app.post("/login", async (req, res) => {
