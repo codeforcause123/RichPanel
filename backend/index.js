@@ -29,14 +29,14 @@ app.use((req, res, next) => {
   next();
 });
 const priceToProductMap = {
-  basicMonthly: "price_1LoMhzFOlrjAHlmzpSvyrxNX",
-  basicYearly: "price_1LoMhzFOlrjAHlmzwTj6iS6u",
-  standardMonthly: "price_1LoMibFOlrjAHlmzbBxbjtN3",
-  standardYearly: "price_1LoMibFOlrjAHlmzGzXefTiF",
-  premiumMonthly: "price_1LoMjBFOlrjAHlmzSiByY7Ki",
-  premiumYearly: "price_1LoMjBFOlrjAHlmzCncSxsCP",
-  mobileMonthly: "price_1LoMjiFOlrjAHlmzTF4huC3K",
-  mobileYearly: "price_1LoMjiFOlrjAHlmzfyEifscy",
+  basicMonthly: "price_1Nc0LfSBuYqweobIm28RwcVA",
+  basicYearly: "price_1Nc08ZSBuYqweobIrBj0OJO6",
+  //   standardMonthly: "price_1LoMibFOlrjAHlmzbBxbjtN3",
+  //   standardYearly: "price_1LoMibFOlrjAHlmzGzXefTiF",
+  //   premiumMonthly: "price_1LoMjBFOlrjAHlmzSiByY7Ki",
+  //   premiumYearly: "price_1LoMjBFOlrjAHlmzCncSxsCP",
+  mobileMonthly: "price_1Nc0BkSBuYqweobIcfrvFSVz",
+  //   regularYearly: "price_1LoMjiFOlrjAHlmzfyEifscy",
 };
 
 app.post("/login", async (req, res) => {
